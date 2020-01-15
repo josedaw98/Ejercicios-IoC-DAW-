@@ -1,17 +1,15 @@
-package com.jose.IoC.services;
-
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
-import org.springframework.stereotype.Component;
+import org.springframework.beans.factory.annotation.Autowired;
 
 import com.jose.IoC.beans.Dia;
+import com.jose.IoC.services.DibujarCalendario;
 
-@Component
-public class DibujarCalendario {
+public class Pruebas {
 
-	public String Dibujar(Dia dia) {
-		
+	public static void main(String[] args) {
+		Dia dia = new Dia();
 		Calendar diaDeHoy = Calendar.getInstance();
 		SimpleDateFormat formato = new SimpleDateFormat("dd/MM/yyyy");
 		dia.setFecha(formato.format(diaDeHoy.getTime()));
@@ -28,8 +26,9 @@ public class DibujarCalendario {
 		}
 		calendario += "</tr>";
 		calendario += "</table>";
-		return calendario;
-		
+
+
+		System.out.println(calendario);
 	}
-	
+
 }

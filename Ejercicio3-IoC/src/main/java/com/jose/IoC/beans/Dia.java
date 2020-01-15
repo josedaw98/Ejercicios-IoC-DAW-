@@ -1,8 +1,6 @@
 package com.jose.IoC.beans;
 
-import org.springframework.context.annotation.Configuration;
 
-@Configuration
 public class Dia {
 
 	
@@ -18,6 +16,13 @@ public class Dia {
 
 	public void setFecha(String fecha) {
 		this.fecha = fecha;
+	}
+
+
+
+	@Override
+	public String toString() {
+		return "Dia [fecha=" + fecha + "]";
 	}
 
 
