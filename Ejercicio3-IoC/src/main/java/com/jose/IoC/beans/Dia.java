@@ -1,6 +1,8 @@
 package com.jose.IoC.beans;
 
+import org.springframework.stereotype.Component;
 
+@Component
 public class Dia {
 
 	

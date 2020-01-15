@@ -18,15 +18,15 @@ public class DibujarCalendario {
 		
 		
 		String calendario = "<table border='1'>";
-		calendario += "<tr>";
+		
 		int i=0;
 		while(i<21) {
 			diaDeHoy.add(Calendar.DATE, 1);
 			dia.setFecha(formato.format(diaDeHoy.getTime()));
-			calendario +="<td>"+dia+"</td>";
+			calendario +="<tr><td>"+dia+"</td></tr>";
 			i++;
 		}
-		calendario += "</tr>";
+		
 		calendario += "</table>";
 		return calendario;
 		
