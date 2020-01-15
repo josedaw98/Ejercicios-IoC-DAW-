@@ -22,7 +22,7 @@ public class RutasEspana {
 		public float PrecioFinal(@PathVariable float cantidad) {
 		  
 			
-		    return cantidad*almacenamiento.getIva();
+		    return cantidad*((almacenamiento.getIva()/100)+1);
 		
 	}
 	

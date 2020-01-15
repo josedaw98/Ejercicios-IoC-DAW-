@@ -11,7 +11,7 @@ public class Francia implements Almacenamiento {
 	@Override
 	public float getIva() {
 		
-		return  1.25f;
+		return  25f;
 	}
 
 }

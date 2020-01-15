@@ -11,7 +11,7 @@ public class Espana implements Almacenamiento {
 	@Override
 	public float getIva() {
 		
-		return 1.21f;
+		return 21f;
 	}
 
 }
