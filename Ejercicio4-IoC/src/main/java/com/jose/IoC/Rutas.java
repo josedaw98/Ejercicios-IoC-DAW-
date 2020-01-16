@@ -13,9 +13,6 @@ public class Rutas {
 	
 	
 	@Autowired
-	Dia dia;
-	
-	@Autowired
 	DibujarCalendario dibujar;
 	
 	@GetMapping("/")
@@ -23,7 +20,7 @@ public class Rutas {
 	public String rutaInicial() {
 		
 				
-		return dibujar.Dibujar(dia);
+		return dibujar.Dibujar(dibujar.rellenar());
 		
 	}
 
