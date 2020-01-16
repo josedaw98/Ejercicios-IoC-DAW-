@@ -12,8 +12,6 @@ import com.jose.IoC.services.DibujarCalendario;
 public class Rutas {
 	
 	
-	@Autowired
-	Dia dia;
 	
 	@Autowired
 	DibujarCalendario dibujar;
@@ -23,7 +21,7 @@ public class Rutas {
 	public String rutaInicial() {
 		
 				
-		return dibujar.Dibujar(dia);
+		return dibujar.Dibujar(dibujar.rellenar());
 		
 	}
 
