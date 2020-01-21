@@ -22,7 +22,7 @@ public class DibujarCalendario {
 		
 		Calendar hoy = Calendar.getInstance();
 		int diaDeLaSemana = hoy.get(Calendar.DAY_OF_WEEK);
-		int resta = 1 - diaDeLaSemana;//ponemos 1 por que el lunes es el dia dos y en nuestro metodo de dibujo al primera dia le sumamos uno
+		int resta = (diaDeLaSemana==1)?-6:1 - diaDeLaSemana;//ponemos 1 por que el lunes es el dia dos y en nuestro metodo de dibujo al primera dia le sumamos uno
 		diaDeHoy.add(Calendar.DATE, resta);
 		
 		for(int i=0;i<15;i++) {
@@ -32,7 +32,7 @@ public class DibujarCalendario {
 			Dias.add(dia);
 			
 		}
-		
+		 
 		
 		return Dias;
 		
